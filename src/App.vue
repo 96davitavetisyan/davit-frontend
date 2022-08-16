@@ -22,7 +22,7 @@ export default {
   created() {
     // Simple POST request with a JSON body using axios
     const article = { title: "Vue POST Request Example" };
-    axios.post("http://127.0.0.1:8000/api/articles", article)
+    axios.post("http://backenddavid.codesk.am/api/articles", article)
       .then((response) => {
         console.log(response)
         this.article = response.data
